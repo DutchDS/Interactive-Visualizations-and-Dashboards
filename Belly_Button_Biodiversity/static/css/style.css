@@ -1,0 +1,49 @@
+body {
+    /* font-family: "Shallow Grave BB";  */
+    font-family: "Lucida Handwriting";
+}
+
+h1 {
+    color: white;
+    font-size: 24px;
+}
+
+h2 {
+    color: white;
+    font-size: 48px;
+    letter-spacing: 3px;
+}
+
+h5 {
+
+    font-size: 16px;
+}
+
+.panel-body {
+   padding: 0px; 
+   width: auto;
+}
+
+td {
+    padding: 5px;
+    margin: 5px;
+}
+
+.jumbotron, .well, .table-head {
+    background-color: rgb(208, 244, 253);
+}
+.table {
+    font-size: 12px;
+}  
+.well {
+    padding: 10px;
+}  
+  @media(max-width: 780px) {
+
+
+  .table {
+      table-layout: auto;
+      width: 100%;}
+
+
+}
