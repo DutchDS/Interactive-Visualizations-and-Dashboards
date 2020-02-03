@@ -14,51 +14,75 @@
   <div style="background-image:url(static/images/sharp2.jpg); background-attachment: fixed; background-size:cover; background-position: right">
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <br>
+      <div class="col-md-12 col-1 text-center" id="header-page">
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
     </div>
     <div class="row">
-      <div class="col-md-2">
+      <br>
+      <div class="col-md-3">
         <div class="well">
-          <h5><strong>Test Subject ID:</strong></h5>
+          <h5><strong>Test Subject ID:</strong>
           <select id="selDataset" onchange="optionChanged(this.value)"></select>
         </div>
         <div class="panel panel-primary">
           <div class="panel-heading">
-            <h5 class="panel-title">Demographic Info</h5>
+            <h5 class="panel-title">Demographic Info
           </div>
           <!-- <div id="sample-metadata" class="panel-body"></div> -->
           <div class="panel-body"></div>
 
           <table id="sample-metadata" class="table table-striped">
-            <thead>
-              <tr>
-                <th class="table-head">Field</th>
-                <th class="table-head">Value</th>
-              </tr>
-            </thead>
+            <!-- <thead>
+            </thead> -->
             <tbody></tbody>
-          </table>
+          </table></h5>
       </div>
       </div>
+      <div class="col-md-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h5 class="panel-title">Top 10 UTO's found in Individual
+          </div>
+          <div class="panel-body">
+            <div id="barArea">
+              <div id="bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="col-md-5">
-        <div id="bar"></div>
-      </div>
-      <div class="col-md-5">
-        <div id="gauge"></div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h5 class="panel-title">Belly Button Washing Frequency
+          </div>
+          <div class="panel-body">
+            <div id="gauge"></div>
+          </div>
+        </div>    
       </div>
     </div>
+
     <div class="row">
       <div class="col-md-12">
-        <div id="bubble"></div>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h5 class="panel-title">Belly Button Bubble Chart
+          </div>
+          <div class="panel-body">
+            <div id="bubble"></div>
+          </div> 
+        </div>   
       </div>
     </div>
   </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
   <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
   <script src="./static/js/app.js"></script>
   <!-- <script src="./static/js/bonus.js"></script> -->
 
